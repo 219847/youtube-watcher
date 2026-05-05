@@ -36,7 +36,7 @@ function convert() {
   var cutoff=a.indexOf('?v=');
   var vid=a.slice(cutoff+3);
   document.getElementById('bypass').innerText=
-    'https://www.youtube-nocookie.com/embed/' + vid;
+    'https://www.youtube-nocookie.com/embed/' + vid.slice(0,11);
   document.getElementById('bypass')
     .setAttribute('href', document.getElementById('bypass').innerText);}
 }
